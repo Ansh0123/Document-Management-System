@@ -6,14 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.geeky.dao.VideoDao;
+import com.geeky.dao.LargeFileDao;
 import com.geeky.model.Video;
 
 @Service
-public class VideoServiceImpl implements VideoService{
+public class LargeFileServiceImpl implements LargeFileService{
 
 	@Autowired 
-	private VideoDao videoDao;
+	private LargeFileDao videoDao;
 	
 	@Override
 	public String addVideo(String title, MultipartFile file) throws IOException {

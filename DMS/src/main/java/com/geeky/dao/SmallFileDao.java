@@ -1,4 +1,4 @@
-package com.geeky.service;
+package com.geeky.dao;
 
 import java.io.IOException;
 
@@ -6,10 +6,9 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.geeky.model.Photo;
 
-public interface PhotoService {
+public interface SmallFileDao {
 	
 	String addPhoto(String title, MultipartFile file) throws IOException;
 
 	Photo getPhoto(String id);
-
 }

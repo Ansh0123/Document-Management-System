@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.geeky.service.PhotoService;
+import com.geeky.service.SmallFileService;
 
 /**
  * 
@@ -27,7 +27,7 @@ public class DmsSmallFileController {
 	private static final String GREETING = "Hello Welcome to Geek World of DMS!!";
 
 	@Autowired
-	private PhotoService photoService;
+	private SmallFileService photoService;
 	
 	@GetMapping("/greeting")
 	public String greetingUrl() {

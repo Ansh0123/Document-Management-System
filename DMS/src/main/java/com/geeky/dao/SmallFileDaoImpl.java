@@ -9,13 +9,13 @@ import org.springframework.stereotype.Repository;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.geeky.model.Photo;
-import com.geeky.repository.PhotoRepository;
+import com.geeky.repository.SmallFileRepository;
 
 @Repository
-public class PhotoDaoImpl implements PhotoDao {
+public class SmallFileDaoImpl implements SmallFileDao {
 
 	@Autowired
-	private PhotoRepository photoRepo;
+	private SmallFileRepository photoRepo;
 	
 	@Override
 	public String addPhoto(String title, MultipartFile file) throws IOException {

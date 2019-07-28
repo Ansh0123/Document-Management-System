@@ -6,7 +6,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.geeky.model.Video;
 
-public interface VideoDao {
+public interface LargeFileDao {
 	
 	String addVideo(String title, MultipartFile file) throws IOException;
 

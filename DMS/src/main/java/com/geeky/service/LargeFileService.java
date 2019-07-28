@@ -6,7 +6,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.geeky.model.Video;
 
-public interface VideoService {
+public interface LargeFileService {
 	
 	String addVideo(String title, MultipartFile file) throws IOException;
 

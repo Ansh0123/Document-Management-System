@@ -12,16 +12,16 @@ import org.springframework.stereotype.Repository;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.geeky.model.Video;
-import com.geeky.repository.VideoRepository;
+import com.geeky.repository.LargeFileRepository;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
 import com.mongodb.gridfs.GridFSFile;
 
 @Repository
-public class VideoDaoImpl implements VideoDao {
+public class LargeFileDaoImpl implements LargeFileDao {
 
 	@Autowired
-	VideoRepository videoRepo;
+	LargeFileRepository videoRepo;
 
 	@Autowired
 	private GridFsTemplate gridFsTemplate;
